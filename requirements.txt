@@ -1,0 +1,5 @@
+# Check all packages installed in your environment
+pip list
+
+# create the requirements file
+pip freeze > requirements.txt
