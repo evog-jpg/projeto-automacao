@@ -1,5 +1,5 @@
-*.DS_Store
-.conftest.py
-
+.pytest_cache/
 .vscode/
+*.DS_Store
+conftest.py
 teste-projeto.venv/
