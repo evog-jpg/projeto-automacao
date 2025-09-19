@@ -1,3 +1,5 @@
 *.DS_Store
-*conftest.py
-*.vscode
+.conftest.py
+
+.vscode/
+teste-projeto.venv/
