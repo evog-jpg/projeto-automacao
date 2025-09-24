@@ -21,5 +21,5 @@ def test_tooltips_hover_input(driver, test_data):
     # Hover over input field and check tooltip
     tool_tips_page.hover_over_input_field()
 
-    field_tooltip_text = tool_tips_page.get_button_tooltip_text()
+    field_tooltip_text = tool_tips_page.get_input_field_tooltip_text()
     assert field_tooltip_text == test_data["tool_tip_field_text"]

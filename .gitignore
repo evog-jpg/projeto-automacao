@@ -3,3 +3,4 @@
 *.DS_Store
 conftest.py
 teste-projeto.venv/
+allure-results/
