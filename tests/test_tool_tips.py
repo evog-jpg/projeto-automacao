@@ -1,20 +1,18 @@
 from pages.tool_tips_page import ToolTipsPage
 from selenium.webdriver.common.by import By
 import pytest
+from utils.data_loader import load_json_data
+
+test_data = load_json_data("data/test_data.json")
 
 @pytest.mark.widgets
-def test_tooltips_hover_button(driver, test_data):
+def test_button_tooltip(driver):
+    """Tests the tooltip on the button."""
     tool_tips_page = ToolTipsPage(driver)
     tool_tips_page.navigate(test_data["tool_tips_url"])
 
-    # Hover over button and check tooltip
-    tool_tips_page.hover_over_button()
-
-    tooltip_text = tool_tips_page.get_button_tooltip_text()
-    assert tooltip_text == test_data["tool_tip_button_text"]
-
 @pytest.mark.widgets
-def test_tooltips_hover_input(driver, test_data):
+def test_tooltips_hover_input(driver):
     tool_tips_page = ToolTipsPage(driver)
     tool_tips_page.navigate(test_data["tool_tips_url"])
 

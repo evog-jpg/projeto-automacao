@@ -3,6 +3,13 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 
 class PracticeFormPage:
+    """Page Object for the DemoQA Practice Form page.
+    Returns:
+    - navigate method to open the form page
+    - fill_form method to populate the form fields
+    - submit_form method to submit the form
+    - check_modal_visible method to verify if the submission modal is visible
+    """
     def __init__(self, driver):
         self.driver = driver
         self.url = "https://demoqa.com/automation-practice-form"
@@ -42,7 +49,7 @@ class PracticeFormPage:
         for subject in data["subjects"]:
             subjects_field.send_keys(subject)
             subjects_field.send_keys(Keys.ENTER)
-            
+
         state_element = self.driver.find_element(*self.state_dropdown)
         self.driver.execute_script("arguments[0].scrollIntoView(true);", state_element)
         self.driver.find_element(*self.state_dropdown).click()
@@ -58,7 +65,7 @@ class PracticeFormPage:
         self.driver.find_element(*self.address_textarea).send_keys(data["address"])
 
         # State and City
-        
+
 
         city_element = self.driver.find_element(*self.city_dropdown)
         self.driver.execute_script("arguments[0].scrollIntoView(true);", city_element)

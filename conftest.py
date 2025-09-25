@@ -1,22 +1,16 @@
 import os
 import pytest
-import json
 import time
 from pathlib import Path
 import pytest_html
 from selenium import webdriver
 
-# Fixture to load test data from JSON
-@pytest.fixture(scope="session")
-def test_data():
-    with open("data/test_data.json") as f:
-        print("Loading test data from JSON file.")
-        return json.load(f)
-
 LOG_FILE = Path("test_durations.log")
+
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_runtest_setup(item):
+    '''setup da duração dos testes'''
     item.start_time = time.time()
     item.start_str = time.strftime("%H:%M:%S", time.localtime())
     msg = f"\n[START] Test '{item.nodeid}' - {item.start_str}"
@@ -25,8 +19,10 @@ def pytest_runtest_setup(item):
     with LOG_FILE.open("a", encoding="utf-8") as f:
         f.write(msg + "\n")
 
+
 @pytest.hookimpl(trylast=True)
 def pytest_runtest_teardown(item):
+    '''teardown da duração dos testes, com o tempo de duração'''
     duration = time.time() - item.start_time
     msg = f"[END] Test '{item.nodeid}' finished in {duration:.2f} seconds."
     print(msg)
@@ -35,7 +31,9 @@ def pytest_runtest_teardown(item):
     with LOG_FILE.open("a", encoding="utf-8") as f:
         f.write(msg + "\n")
 
+
 def pytest_addoption(parser):
+    '''passa um addoption para o pytest rodar em diferentes browsers'''
     parser.addoption(
         "--browser",
         action="store",
@@ -43,8 +41,10 @@ def pytest_addoption(parser):
         help="Browser to run tests (chrome or firefox)",
     )
 
+
 @pytest.fixture
 def driver(request):
+    '''inicializações dos drivers de cada browser e value error para browsers não suportados'''
     browser = request.config.getoption("--browser").lower()
     if browser == "chrome":
         driver_instance = webdriver.Chrome()
@@ -56,8 +56,10 @@ def driver(request):
     yield driver_instance
     driver_instance.quit()
 
+
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
+    '''tira um screenshot quando um teste falha e adiciona ao relatório HTML'''
     outcome = yield
     report = outcome.get_result()
     extra = getattr(report, "extra", [])
