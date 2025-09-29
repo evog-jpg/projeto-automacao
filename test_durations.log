@@ -992,3 +992,39 @@
 
 [START] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' - 11:00:35
 [END] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' finished in 17.32 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[chrome]' - 11:36:57
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[chrome]' finished in 5.28 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' - 11:37:03
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' finished in 18.76 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[chrome]' - 11:39:15
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[chrome]' finished in 14.29 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' - 11:39:29
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' finished in 17.82 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[chrome]' - 11:50:54
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[chrome]' finished in 7.63 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' - 11:51:01
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[firefox]' finished in 12.15 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_5seconds[chrome]' - 11:51:14
+[END] Test 'tests/test_alerts.py::test_alerts_5seconds[chrome]' finished in 12.44 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_5seconds[firefox]' - 11:51:26
+[END] Test 'tests/test_alerts.py::test_alerts_5seconds[firefox]' finished in 16.98 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_confirm_box[chrome]' - 11:51:43
+[END] Test 'tests/test_alerts.py::test_alerts_confirm_box[chrome]' finished in 8.07 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_confirm_box[firefox]' - 11:51:51
+[END] Test 'tests/test_alerts.py::test_alerts_confirm_box[firefox]' finished in 11.28 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_prompt_box[chrome]' - 11:52:02
+[END] Test 'tests/test_alerts.py::test_alerts_prompt_box[chrome]' finished in 7.99 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_prompt_box[firefox]' - 11:52:10
+[END] Test 'tests/test_alerts.py::test_alerts_prompt_box[firefox]' finished in 55.67 seconds.
