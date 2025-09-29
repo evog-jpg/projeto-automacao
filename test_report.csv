@@ -1,0 +1,5 @@
+browser,test_case_name,status,timestamp
+Chrome,test_fill_practice_form[chrome-data0],Passed,8.0635s
+Chrome,test_fill_practice_form[chrome-data1],Passed,7.6946s
+Firefox,test_fill_practice_form[firefox-data0],Failed,8.3484s
+Firefox,test_fill_practice_form[firefox-data1],Failed,8.6622s

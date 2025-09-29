@@ -1,6 +1,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class PracticeFormPage:
     """Page Object for the DemoQA Practice Form page.
@@ -27,6 +29,7 @@ class PracticeFormPage:
         self.city_dropdown = (By.ID, "city")
         self.submit_button = (By.ID, "submit")
         self.out_put_modal = (By.ID, "example-modal-sizes-title-lg")
+        self.wait = WebDriverWait(driver, 10)
 
     def navigate(self):
         self.driver.get(self.url)
@@ -46,9 +49,11 @@ class PracticeFormPage:
 
         # Subjects
         subjects_field = self.driver.find_element(*self.subjects_input)
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", subjects_field)
         for subject in data["subjects"]:
             subjects_field.send_keys(subject)
-            subjects_field.send_keys(Keys.ENTER)
+            subject_text = self.wait.until(EC.element_to_be_clickable(self.subject_text))
+            subject_text.click()
 
         state_element = self.driver.find_element(*self.state_dropdown)
         self.driver.execute_script("arguments[0].scrollIntoView(true);", state_element)
