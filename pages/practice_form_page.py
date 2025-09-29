@@ -30,6 +30,7 @@ class PracticeFormPage:
         self.submit_button = (By.ID, "submit")
         self.out_put_modal = (By.ID, "example-modal-sizes-title-lg")
         self.wait = WebDriverWait(driver, 10)
+        self.subject_text = (By.ID, "react-select-2-option-0")
 
     def navigate(self):
         self.driver.get(self.url)
@@ -53,7 +54,7 @@ class PracticeFormPage:
         for subject in data["subjects"]:
             subjects_field.send_keys(subject)
             subject_text = self.wait.until(EC.element_to_be_clickable(self.subject_text))
-            subject_text.click()
+        subject_text.click()
 
         state_element = self.driver.find_element(*self.state_dropdown)
         self.driver.execute_script("arguments[0].scrollIntoView(true);", state_element)

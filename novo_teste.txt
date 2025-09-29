@@ -1,0 +1,9 @@
+criar o teste manual
+criar page objects model
+criar o novo script de automacao
+-navegar para demoqa
+clicar em alert
+interagir com os botoes
+validar cada um dos alerts
+
+4 metodos, um pra cada

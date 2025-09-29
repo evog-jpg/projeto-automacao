@@ -34,16 +34,6 @@ def pytest_runtest_teardown(item):
     with LOG_FILE.open("a", encoding="utf-8") as f:
         f.write(msg + "\n")
 
-
-# def pytest_addoption(parser):
-#     '''passa um addoption para o pytest rodar em diferentes browsers'''
-#     parser.addoption(
-#         "--browser",
-#         action="store",
-#         default="chrome",
-#         help="Browser to run tests (chrome or firefox)",
-#     )
-
 #@pytest.fixture
 @pytest.fixture(params=["chrome", "firefox"], scope="function")
 def driver(request: pytest.FixtureRequest):
@@ -116,3 +106,29 @@ def pytest_sessionfinish(session):
         dict_writer.writerows(sorted_reports)
 
     print("\nReport 'test_report.csv' generated successfully")
+
+def pytest_sessionstart(session):
+   # Called before tests run
+    pass
+
+def pytest_sessionfinish(session, exitstatus):
+    # Called after all tests run
+    pass
+
+@pytest.fixture(scope="class")
+def class_resource():
+    print("\n[SETUP] class_resource")
+    yield "class fixture"
+    print("[TEARDOWN] class_resource")
+
+@pytest.fixture(scope="module")
+def module_resource():
+    print("\n[SETUP] module_resource")
+    yield "module fixture"
+    print("[TEARDOWN] module_resource")
+
+@pytest.fixture(scope="session")
+def session_resource():
+    print("\n[SETUP] session_resource")
+    yield "session fixture"
+    print("[TEARDOWN] session_resource")
