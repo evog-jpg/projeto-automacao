@@ -1028,3 +1028,172 @@
 
 [START] Test 'tests/test_alerts.py::test_alerts_prompt_box[firefox]' - 11:52:10
 [END] Test 'tests/test_alerts.py::test_alerts_prompt_box[firefox]' finished in 55.67 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 08:58:05
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 21.72 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 08:58:26
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 33.28 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:17:20
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:24:43
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 20.17 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:25:04
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:27:14
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 9.40 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:27:23
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:29:13
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 10.25 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:29:23
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 12.36 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:32:14
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 8.65 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:32:23
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 12.14 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:36:13
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 8.80 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:36:22
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:39:49
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 9.91 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:39:59
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:40:39
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 8.67 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:40:47
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 14.07 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:41:42
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 16.81 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:41:59
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 17.13 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:43:11
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 22.28 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:43:33
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 23.51 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:46:03
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 11.98 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:46:15
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 19.72 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome]' - 09:47:27
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome]' finished in 10.19 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox]' - 09:47:37
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox]' finished in 13.68 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_confirm_box[chrome-chrome]' - 11:30:37
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[chrome-chrome]' - 11:30:37
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[chrome-chrome]' finished in 9.90 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_interaction[firefox-chrome]' - 11:30:47
+[END] Test 'tests/test_alerts.py::test_alerts_confirm_box[chrome-chrome]' finished in 14.99 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_confirm_box[firefox-chrome]' - 11:30:52
+[END] Test 'tests/test_alerts.py::test_alerts_interaction[firefox-chrome]' finished in 10.96 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_5seconds[chrome-chrome]' - 11:30:58
+[END] Test 'tests/test_alerts.py::test_alerts_confirm_box[firefox-chrome]' finished in 11.42 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_prompt_box[chrome-chrome]' - 11:31:04
+[END] Test 'tests/test_alerts.py::test_alerts_5seconds[chrome-chrome]' finished in 16.18 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_5seconds[firefox-chrome]' - 11:31:14
+[END] Test 'tests/test_alerts.py::test_alerts_prompt_box[chrome-chrome]' finished in 16.07 seconds.
+
+[START] Test 'tests/test_alerts.py::test_alerts_prompt_box[firefox-chrome]' - 11:31:20
+[END] Test 'tests/test_alerts.py::test_alerts_5seconds[firefox-chrome]' finished in 16.28 seconds.
+
+[START] Test 'tests/test_check_box.py::test_check_box_commands[chrome-chrome]' - 11:31:31
+[END] Test 'tests/test_alerts.py::test_alerts_prompt_box[firefox-chrome]' finished in 16.08 seconds.
+
+[START] Test 'tests/test_elements.py::test_locate_by_id[firefox-chrome]' - 11:31:36
+[END] Test 'tests/test_check_box.py::test_check_box_commands[chrome-chrome]' finished in 10.95 seconds.
+
+[START] Test 'tests/test_check_box.py::test_check_box_commands[firefox-chrome]' - 11:31:42
+[END] Test 'tests/test_elements.py::test_locate_by_id[firefox-chrome]' finished in 10.79 seconds.
+
+[START] Test 'tests/test_elements.py::test_locate_by_css_selector[chrome-chrome]' - 11:31:47
+[END] Test 'tests/test_check_box.py::test_check_box_commands[firefox-chrome]' finished in 10.63 seconds.
+
+[START] Test 'tests/test_elements.py::test_navigate_to_elements_page[chrome-chrome]' - 11:31:52
+[END] Test 'tests/test_elements.py::test_locate_by_css_selector[chrome-chrome]' finished in 11.72 seconds.
+
+[START] Test 'tests/test_elements.py::test_locate_by_css_selector[firefox-chrome]' - 11:31:58
+[END] Test 'tests/test_elements.py::test_navigate_to_elements_page[chrome-chrome]' finished in 12.29 seconds.
+
+[START] Test 'tests/test_elements.py::test_navigate_to_elements_page[firefox-chrome]' - 11:32:05
+[END] Test 'tests/test_elements.py::test_locate_by_css_selector[firefox-chrome]' finished in 12.30 seconds.
+
+[START] Test 'tests/test_elements.py::test_locate_by_xpath[chrome-chrome]' - 11:32:11
+[END] Test 'tests/test_elements.py::test_navigate_to_elements_page[firefox-chrome]' finished in 11.47 seconds.
+
+[START] Test 'tests/test_elements.py::test_locate_by_id[chrome-chrome]' - 11:32:16
+[END] Test 'tests/test_elements.py::test_locate_by_xpath[chrome-chrome]' finished in 10.50 seconds.
+
+[START] Test 'tests/test_elements.py::test_locate_by_xpath[firefox-chrome]' - 11:32:21
+[END] Test 'tests/test_elements.py::test_locate_by_id[chrome-chrome]' finished in 10.00 seconds.
+
+[START] Test 'tests/test_practice_form.py::test_fill_practice_form[firefox-chrome-data0]' - 11:32:26
+[END] Test 'tests/test_elements.py::test_locate_by_xpath[firefox-chrome]' finished in 10.91 seconds.
+
+[START] Test 'tests/test_practice_form.py::test_fill_practice_form[chrome-chrome-data0]' - 11:32:32
+[END] Test 'tests/test_practice_form.py::test_fill_practice_form[firefox-chrome-data0]' finished in 25.34 seconds.
+
+[START] Test 'tests/test_practice_form.py::test_fill_practice_form[firefox-chrome-data1]' - 11:32:51
+[END] Test 'tests/test_practice_form.py::test_fill_practice_form[chrome-chrome-data0]' finished in 36.69 seconds.
+
+[START] Test 'tests/test_practice_form.py::test_fill_practice_form[chrome-chrome-data1]' - 11:33:09
+[END] Test 'tests/test_practice_form.py::test_fill_practice_form[firefox-chrome-data1]' finished in 35.83 seconds.
+
+[START] Test 'tests/test_scopes_1.py::TestGroupA::test_one' - 11:33:27
+[END] Test 'tests/test_scopes_1.py::TestGroupA::test_one' finished in 0.00 seconds.
+
+[START] Test 'tests/test_scopes_1.py::TestGroupB::test_three' - 11:33:27
+[END] Test 'tests/test_scopes_1.py::TestGroupB::test_three' finished in 0.01 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[chrome-chrome]' - 11:33:27
+[END] Test 'tests/test_practice_form.py::test_fill_practice_form[chrome-chrome-data1]' finished in 36.27 seconds.
+
+[START] Test 'tests/test_scopes_1.py::TestGroupA::test_two' - 11:33:45
+[END] Test 'tests/test_scopes_1.py::TestGroupA::test_two' finished in 0.01 seconds.
+
+[START] Test 'tests/test_text_box.py::test_fill_form_with_pom[chrome-chrome]' - 11:33:45
+[END] Test 'tests/test_slider.py::test_slider_interaction[chrome-chrome]' finished in 28.55 seconds.
+
+[START] Test 'tests/test_slider.py::test_slider_interaction[firefox-chrome]' - 11:33:56
+[END] Test 'tests/test_text_box.py::test_fill_form_with_pom[chrome-chrome]' finished in 17.41 seconds.
+
+[START] Test 'tests/test_text_box.py::test_fill_form_with_pom[firefox-chrome]' - 11:34:03
+[END] Test 'tests/test_slider.py::test_slider_interaction[firefox-chrome]' finished in 17.68 seconds.
+
+[START] Test 'tests/test_tool_tips.py::test_button_tooltip[chrome-chrome]' - 11:34:13
+[END] Test 'tests/test_text_box.py::test_fill_form_with_pom[firefox-chrome]' finished in 17.47 seconds.
+
+[START] Test 'tests/test_tool_tips.py::test_button_tooltip[firefox-chrome]' - 11:34:20
+[END] Test 'tests/test_tool_tips.py::test_button_tooltip[chrome-chrome]' finished in 12.41 seconds.
+
+[START] Test 'tests/test_tool_tips.py::test_tooltips_hover_input[chrome-chrome]' - 11:34:26
+[END] Test 'tests/test_tool_tips.py::test_button_tooltip[firefox-chrome]' finished in 11.23 seconds.
+
+[START] Test 'tests/test_tool_tips.py::test_tooltips_hover_input[firefox-chrome]' - 11:34:31
+[END] Test 'tests/test_tool_tips.py::test_tooltips_hover_input[chrome-chrome]' finished in 11.52 seconds.
+[END] Test 'tests/test_tool_tips.py::test_tooltips_hover_input[firefox-chrome]' finished in 12.18 seconds.

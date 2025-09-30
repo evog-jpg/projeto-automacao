@@ -4,6 +4,8 @@ import time
 from pathlib import Path
 import pytest_html
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
 import csv
 
 report_data = []
@@ -34,23 +36,46 @@ def pytest_runtest_teardown(item):
     with LOG_FILE.open("a", encoding="utf-8") as f:
         f.write(msg + "\n")
 
-#@pytest.fixture
-@pytest.fixture(params=["chrome", "firefox"], scope="function")
-def driver(request: pytest.FixtureRequest):
-    '''inicializações dos drivers de cada browser e value error para browsers não suportados'''
-    #browser = request.config.getoption("--browser").lower()
-    browser = request.param
-    if browser == "chrome":
-        driver_instance = webdriver.Chrome()
-    elif browser == "firefox":
-        driver_instance = webdriver.Firefox()
-    else:
-        raise ValueError(f"Unsupported browser: {browser}")
-    driver_instance.maximize_window()
-    request.node.browser = browser
-    yield driver_instance
-    driver_instance.quit()
+# @pytest.fixture(params=["chrome", "firefox"], scope="function")
+# def driver(request: pytest.FixtureRequest):
+#     '''inicializações dos drivers de cada browser e value error para browsers não suportados'''
+#     #browser = request.config.getoption("--browser").lower()
+#     browser = request.param
+#     if browser == "chrome":
+#         driver_instance = webdriver.Chrome()
+#     elif browser == "firefox":
+#         driver_instance = webdriver.Firefox()
+#     else:
+#         raise ValueError(f"Unsupported browser: {browser}")
+#     driver_instance.maximize_window()
+#     request.node.browser = browser
+#     yield driver_instance
+#     driver_instance.quit()
 
+def pytest_addoption(parser):
+    parser.addoption("--browser", action="store", default="chrome", help="browser to execute tests (chrome or firefox)")
+
+def pytest_generate_tests(metafunc):
+    if "browser" in metafunc.fixturenames:
+        browser = metafunc.config.getoption("browser").split(",")
+        metafunc.parametrize("browser", browser)
+
+@pytest.fixture(params=["chrome", "firefox"], scope="function")
+def driver(browser):
+    if browser == "chrome":
+        options = ChromeOptions()
+    elif browser == "firefox":
+        options = FirefoxOptions()
+    else:
+        raise ValueError(f"Browser not supported: {browser}")
+
+    driver = webdriver.Remote(
+        command_executor="http://localhost:4444/wd/hub",
+        options=options,
+    )
+
+    yield driver
+    driver.quit()
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
